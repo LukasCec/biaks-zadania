@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0f1115;
+  color: #e4e8f1;
+}
+
+.lab {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.lab-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.lab-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.lab-switch {
+  display: flex;
+  background: #1a1d24;
+  border-radius: 8px;
+  padding: 0.2rem;
+  gap: 0.2rem;
+}
+
+.lab-switch-btn {
+  border: none;
+  background: transparent;
+  color: #8a94ab;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lab-switch-btn.active {
+  background: #2dd4bf;
+  color: #06251e;
+}
+
+
+
+.lab-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.lab-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: #8a94ab;
+}
+
+.lab-form input {
+  padding: 0.6rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #262a33;
+  background: #15171d;
+  color: #e4e8f1;
+  font-size: 0.92rem;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+}
+
+.lab-form input:focus {
+  outline: none;
+  border-color: #2dd4bf;
+}
+
+.lab-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.lab-preset-btn {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #262a33;
+  background: #15171d;
+  color: #8a94ab;
+  font-size: 0.76rem;
+  cursor: pointer;
+}
+
+.lab-preset-btn:hover {
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+}
+
+.lab-run {
+  align-self: flex-start;
+  padding: 0.55rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.query-panel {
+  background: #15171d;
+  border: 1px solid #262a33;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.query-code {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  color: #cdd4e4;
+}
+
+.kw {
+  color: #2dd4bf;
+  font-weight: 600;
+}
+
+.cm {
+  color: #6b7488;
+  font-style: italic;
+}
+
+.query-params {
+  padding: 0.6rem 1.1rem;
+  border-top: 1px solid #262a33;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+  font-size: 0.78rem;
+  color: #8a94ab;
+}
+
+.lab-result {
+  border: 1px solid #262a33;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.lab-result.ok {
+  border-color: #1f5a4a;
+}
+
+.lab-result.fail {
+  border-color: #6b2c3a;
+}
+
+.lab-result-message {
+  font-size: 0.92rem;
+  color: #cdd4e4;
+}
+
+.lab-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+}
+
+.lab-table th,
+.lab-table td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #262a33;
+}
+
+.lab-table th {
+  color: #8a94ab;
+  font-weight: 600;
+}
+
+.lab-enter {
+  margin-top: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2dd4bf;
+  color: #06251e;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lab-dbstate {
+  margin-top: 1.25rem;
+}
+
+.lab-dbstate-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7488;
+  margin-bottom: 0.5rem;
+}
+
+.landing-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: #e4e8f1;
+}
+
+.landing-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #262a33;
+}
+
+.landing-page header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.landing-page p {
+  color: #8a94ab;
+  line-height: 1.7;
+}
+
+.landing-page button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #6b2c3a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
